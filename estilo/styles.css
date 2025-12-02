@@ -1,21 +1,82 @@
-*{
+*{ 
     margin: 0;
-    padding: 0;
+    padding: 6px 0;
     box-sizing: border-box;
 }
+:root {
+  --cor-oliva: #556B2F;
+  --cor-madeira: #A67C52;
+  --cor-bege: #F5F3EE;
+  --cor-concreto: #E1E1E1;
+  --cor-preto: #1A1A1A;
+}
 header{
-    background-color: #fff;
-    padding: 20px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f5f3ee21;
+    padding: 20px 40px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.514);
+    height: 80px;
 }
 .d-flex a{
     margin: 0 15px;
     text-decoration: none;
-    color: #333;
+    color: var(--cor-concreto);
     font-weight: bold;
+    background-attachment: fixed
+}
+.d-flex a:hover{
+    color: var(--cor-oliva);
+}
+main{
+    padding: 60px 20px;
+    text-align: left;
+}
+main h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #F5F3EE;
+}
+main .nome-h1{
+    color: var(--cor-oliva);
+}
+main p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #F5F3EE;
 }
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
-    color: #333;
+    color: #000000;
+    background-image: url(/imgs/clem-onojeghuo-zlABb6Gke24-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.btn-reservar {
+  background-color: transparent;
+  color: var(--cor-concreto);
+  padding: 0.75rem 1.4rem;
+  border-radius: 10px;
+  border: 2px solid var(--cor-oliva);
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.btn-reservar:hover {
+  background-color: var(--cor-oliva);
+}
+footer {
+    background-color: #f5f3ee21;
+    color: var(--cor-preto);
+    text-align: center;
+    padding: 0.5px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.151);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer p {
+    color: var(--cor-concreto);
+    margin: 10px 0;
+    font-size: 0.9rem;
 }
