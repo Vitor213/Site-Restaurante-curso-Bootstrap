@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Mesa - Les Présidents</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/estilo/styles.css">
+    <link rel="icon" href="/imgs/icons8-capacete-grego-64 (1).png" type="image/png">
+</head>
+<body>
+    <header class="container-fluid d-flex align-items-center">
+
+        <!-- ESQUERDA: logo -->
+        <section class="me-auto d-flex align-items-center">
+            <a href="index.html" class="logo me-3">
+                <img src="/imgs/icons8-capacete-grego-64.png" alt="Logo">
+            </a>
+        </section>
+
+        <!-- MEIO: navegação -->
+        <section class="mx-auto">
+            <nav class="d-flex gap-4">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="menu.html">Menu</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </section>
+
+        <!-- DIREITA: botão -->
+        <section class="ms-auto">
+            <a href="reservarMesa.html" class="btn-reservar2">Reservar mesa</a>
+        </section>
+    </header>
+    <main>
+        <div class="container d-flex justify-content-center">
+            <div class="p-4 rounded-4 shadow-sm bg-transparent text-center w-75">
+                <h2 style="color: #84b333;">Reservar Mesa</h2>
+                <p>
+                    Para reservar uma mesa no Les Présidents, por favor, preecha o formulário de reserva abaixo com suas informações:
+                </p>
+                <form class="caixa-reservaMesa">
+                    <div class="mb-3 text-start">
+                        <label for="nome" class="form-label">Nome Completo:</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="tel" class="form-control" id="telefone" required>
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="data" class="form-label">Data da Reserva:</label>
+                        <input type="date" class="form-control" id="data" required>
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="hora" class="form-label">Hora da Reserva:</label>
+                        <input type="time" class="form-control" id="hora" required>
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="pessoas" class="form-label">Número de Pessoas:</label>
+                        <input type="number" class="form-control" id="pessoas" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Reserva</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer style="position: relative !important;">
+        <p>© 2025 Les Présidents.</p>
+    </footer>
+</body>
+</html>
