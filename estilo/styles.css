@@ -37,11 +37,16 @@ main h1{
 }
 main .nome-h1{
     color: var(--cor-oliva);
+    
 }
 main p{
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: #F5F3EE;
+}
+.caixa-botoes {
+    display: flex;
+    gap: 15px;
 }
 body {
     font-family: Arial, sans-serif;
@@ -56,7 +61,7 @@ body {
   background-color: transparent;
   color: var(--cor-concreto);
   padding: 0.75rem 1.4rem;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 2px solid var(--cor-oliva);
   cursor: pointer;
   transition: .2s ease;
@@ -65,15 +70,24 @@ body {
 .btn-reservar:hover {
   background-color: var(--cor-oliva);
 }
+.btn-contato {
+  background-color: transparent;
+  color: var(--cor-concreto);
+  padding: 0.75rem 1.4rem;
+  border-radius: 15px;
+  border: 2px solid var(--cor-oliva);
+  cursor: pointer;
+  transition: .2s ease;
+}
 footer {
     background-color: #f5f3ee21;
     color: var(--cor-preto);
     text-align: center;
     padding: 0.5px 0;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.151);
-    position: fixed;
     width: 100%;
     bottom: 0;
+    position: fixed;
 }
 footer p {
     color: var(--cor-concreto);
@@ -86,9 +100,30 @@ footer p {
     object-fit: cover;      /* recorta suavemente sem distorcer */
     border-radius: 10px;
 }
+.card{
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.card-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-oliva);
+}
+.card-text {
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--cor-concreto);
+}
 .menu-card figcaption {
     margin-top: 10px;
     text-align: center;
     color: var(--cor-concreto);
     font-size: 14px;
+    font-style: italic;
+}
+.p-4{
+    padding: 15px;
+    border: solid 1px var(--cor-concreto);
 }
