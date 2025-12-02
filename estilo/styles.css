@@ -80,3 +80,15 @@ footer p {
     margin: 10px 0;
     font-size: 0.9rem;
 }
+.menu-card img{
+    width: 100%;
+    height: 200px;          /* todas as fotos ficam iguais */
+    object-fit: cover;      /* recorta suavemente sem distorcer */
+    border-radius: 10px;
+}
+.menu-card figcaption {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--cor-concreto);
+    font-size: 14px;
+}
