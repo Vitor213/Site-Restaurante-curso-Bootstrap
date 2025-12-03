@@ -3,7 +3,7 @@
    =========================== */
 @media (max-width: 600px) {
 
-  /* header fica relativo para que elementos absolutos (hamburger / nav) se posicionem dentro dele */
+  /* header fica relativo para que elementos absolutos (hamburger / nav / btn) se posicionem dentro dele */
   header {
     position: relative;
     padding: 15px 20px;
@@ -51,31 +51,31 @@
     color: var(--cor-oliva);
   }
 
-  /* Ícone hambúrguer - visível no mobile, posicionado dentro do header à direita */
+  /* Ícone hambúrguer - posicionado dentro do header à direita, antes do botão reserva */
   .hamburger {
     position: absolute;
-    right: 12px;
+    right: 72px;              /* deixa espaço para o botão de reserva à direita */
     top: 50%;
     transform: translateY(-50%);
     display: block;
     font-size: 2rem;
     padding: 6px 8px;
     color: var(--cor-concreto);
-    z-index: 1000;
+    z-index: 1001;
     cursor: pointer;
   }
 
+  /* Botão reservar - também dentro do header, alinhado ao canto direito */
   #btn-reserva {
     display: none;
+    right: 12px;
+    top: 50%;
+    z-index: 1000;
   }
 
   body{
-    background-image: url(imgs/vers-mobile.jpg) !important;
-    background-size: cover;
-    background-position: center;
     width: auto;
     height: 100vh;
-    
   }
 
   main {
@@ -90,7 +90,6 @@
   main p {
     font-size: 1rem;
   }
-  
 
   .caixa-botoes {
     flex-direction: column;
