@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+    .menu-card img{
+        height: 150px; /* reduz a altura das imagens em telas menores */
+        width: auto; /* mantém a proporção da imagem */
+        
+    }
+}
