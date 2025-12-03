@@ -10,6 +10,9 @@
     height: 80px;
     text-align: center;
   }
+  header nav a{
+    display: none;
+  }
   #iconeHeader {
     width: 40px;
   }
