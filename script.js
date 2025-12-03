@@ -30,3 +30,14 @@ if (nome.value && email.value && dataReserva.value && hora.value && pessoas.valu
 
 
 });
+
+document.addEventListener("click", function(e) {
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.querySelector(".menu-links");
+    const hamburger = document.querySelector(".hamburger");
+
+    if (toggle.checked && !menu.contains(e.target) && !hamburger.contains(e.target)) {
+        toggle.checked = false;
+    }
+});
+
