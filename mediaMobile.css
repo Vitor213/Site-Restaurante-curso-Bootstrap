@@ -13,9 +13,6 @@
   header nav a{
     display: none;
   }
-  #iconeHeader {
-    width: 40px;
-  }
 
   /* Menu de navegação - escondido por padrão */
   .nav-menu {
