@@ -1,0 +1,111 @@
+/* ===========================
+   📱  MOBILE (até 600px)
+   =========================== */
+@media (max-width: 600px) {
+
+  header {
+    padding: 15px 20px;
+    height: 80px;
+    text-align: center;
+  }
+  #iconeHeader {
+    width: 40px;
+  }
+
+  /* Menu de navegação - escondido por padrão */
+  .nav-menu {
+    position: absolute !important;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    flex-direction: column;
+    background: var(--cor-concreto);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    gap: 12px;
+    z-index: 999;
+    display: none !important;
+  }
+
+  /* Quando o checkbox está marcado, mostra o menu */
+  #menu-toggle:checked ~ .nav-menu {
+    display: flex !important;
+  }
+
+  /* Links do menu */
+  .nav-menu a {
+    margin: 0;
+    padding: 8px 0;
+    font-size: 1rem;
+    text-align: left;
+    color: var(--cor-preto);
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+  }
+
+  .nav-menu a:hover {
+    color: var(--cor-oliva);
+  }
+
+  /* Ícone hambúrguer - visível no mobile */
+.hamburger {
+    position: absolute;
+    right: 20px;
+    top: 6.5%;
+    transform: translateY(-50%);
+    display: block;
+    font-size: 2rem;
+    padding: 10px;
+    color: var(--cor-concreto);
+}
+
+  #btn-reserva {
+    display: none;
+  }
+
+  body{
+    background-image: url(imgs/vers-mobile.jpg) !important;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 100vh;
+    
+  }
+
+  main {
+    padding: 150px 10px;
+    text-align: center;
+  }
+
+  main h1 {
+    font-size: 2.2rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+  
+
+  .caixa-botoes {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-reservar,
+  .btn-reservar2,
+  .btn-contato {
+    width: 100%;
+  }
+
+  .menu-card img {
+    height: 150px; 
+  }
+
+  footer {
+    position: fixed;
+    padding: 10px 0;
+  }
+
+}

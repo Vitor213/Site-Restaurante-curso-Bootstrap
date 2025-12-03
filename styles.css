@@ -16,14 +16,13 @@ header{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.514);
     height: 80px;
 }
-.d-flex a{
+.nav-menu a{
     margin: 0 15px;
     text-decoration: none;
     color: var(--cor-concreto);
     font-weight: bold;
-    background-attachment: fixed
 }
-.d-flex a:hover{
+.nav-menu a:hover{
     color: var(--cor-oliva);
 }
 main{
@@ -37,7 +36,6 @@ main h1{
 }
 main .nome-h1{
     color: var(--cor-oliva);
-    
 }
 main p{
     font-size: 1.2rem;
@@ -111,14 +109,13 @@ footer p {
 }
 .menu-card img{
     width: 100%;
-    height: 200px;          /* todas as fotos ficam iguais */
-    object-fit: cover;      /* recorta suavemente sem distorcer */
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
 }
 .card{
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
 }
 .card-title {
     margin-top: 10px;
@@ -140,7 +137,6 @@ footer p {
 }
 .p-4{
     padding: 15px;
-    
 }
 .caixa-reservaMesa{
     background-color: #f5f3ee21;
@@ -152,5 +148,12 @@ footer p {
 }
 .mb-3{
     margin-bottom: 15px;
+}
 
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
 }
