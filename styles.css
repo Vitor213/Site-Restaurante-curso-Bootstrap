@@ -80,6 +80,10 @@ body {
   cursor: pointer;
   transition: .2s ease;
 }
+.btn-contato:hover {
+    color: var(--cor-concreto) !important;
+    background-color: var(--cor-oliva);
+}
 .btn-reservar2{
     text-decoration: none;
     background-color: transparent;
