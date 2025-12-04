@@ -71,6 +71,7 @@ body {
     background-color: var(--cor-oliva);
 }
 .btn-contato {
+  text-decoration: none;
   background-color: transparent;
   color: var(--cor-concreto);
   padding: 0.75rem 1.4rem;
@@ -80,6 +81,7 @@ body {
   transition: .2s ease;
 }
 .btn-reservar2{
+    text-decoration: none;
     background-color: transparent;
     color: var(--cor-concreto);
     padding: 0.75rem 1.4rem;
