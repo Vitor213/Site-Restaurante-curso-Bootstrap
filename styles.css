@@ -159,3 +159,16 @@ footer p {
 .hamburger {
     display: none;
 }
+
+/* Ensure background image reaches the bottom on larger screens only */
+@media (min-width: 601px) {
+    html, body {
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    /* Keep the background fixed so it always fills the viewport behind the fixed footer */
+    body {
+        background-attachment: fixed;
+    }
+}
