@@ -95,7 +95,7 @@ body {
     background-color: var(--cor-oliva);
 }
 footer {
-    background-color: #f5f3ee21;
+    background-color: #f5f3ee21 !important;
     color: var(--cor-preto);
     text-align: center;
     padding: 0.5px 0;
