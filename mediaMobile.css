@@ -54,7 +54,7 @@
   /* Ícone hambúrguer - posicionado dentro do header à direita, antes do botão reserva */
   .hamburger {
     position: absolute;
-    right: 72px;              /* deixa espaço para o botão de reserva à direita */
+    right: 40px;              /* deixa espaço para o botão de reserva à direita */
     top: 50%;
     transform: translateY(-50%);
     display: block;
@@ -62,22 +62,40 @@
     padding: 6px 8px;
     color: var(--cor-concreto);
     z-index: 1001;
-    cursor: pointer;
   }
 
-  /* Botão reservar - também dentro do header, alinhado ao canto direito */
   #btn-reserva {
     display: none;
-    right: 12px;
-    top: 50%;
-    z-index: 1000;
   }
-
+  * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
   body{
     width: auto;
     height: 100vh;
   }
-
+  #h1-sobre, #h1-menu, #h1-galeria {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--cor-oliva);
+  }
+  .sobre-text, .menu-text, .gallery-text {
+    font-size: 1rem;
+    color: var(--cor-concreto);
+    line-height: 1.5rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .card{
+    margin: 10px;
+    width: 200px;
+    
+  }
   main {
     padding: 150px 10px;
     text-align: center;
