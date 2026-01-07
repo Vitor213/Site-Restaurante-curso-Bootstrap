@@ -2,7 +2,6 @@
    📱  MOBILE (até 600px)
    =========================== */
 @media (max-width: 600px) {
-
   /* header fica relativo para que elementos absolutos (hamburger / nav / btn) se posicionem dentro dele */
   header {
     position: relative;
@@ -10,15 +9,26 @@
     height: 80px;
     text-align: center;
   }
-  header nav a{
+  header nav a {
     display: none;
+  }
+  .nome-h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0px 80px;
+  }
+  .me-auto.d-flex.align-items-center img {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: auto;
   }
 
   /* Menu de navegação - escondido por padrão */
   .nav-menu {
-    position: absolute !important;
+    position: absolute;
     top: calc(100% + 8px); /* fica logo abaixo do header */
-    right: 12px;            /* alinhado à direita dentro do header */
+    right: 12px; /* alinhado à direita dentro do header */
     width: 180px;
     flex-direction: column;
     background: var(--cor-concreto);
@@ -54,7 +64,7 @@
   /* Ícone hambúrguer - posicionado dentro do header à direita, antes do botão reserva */
   .hamburger {
     position: absolute;
-    right: 72px;              /* deixa espaço para o botão de reserva à direita */
+    right: 72px; /* deixa espaço para o botão de reserva à direita */
     top: 50%;
     transform: translateY(-50%);
     display: block;
@@ -68,19 +78,44 @@
   /* Botão reservar - também dentro do header, alinhado ao canto direito */
   #btn-reserva {
     display: none;
-    right: 12px;
-    top: 50%;
-    z-index: 1000;
   }
 
-  body{
-    width: auto;
+  body {
     height: 100vh;
+    overflow-x: hidden;
+    background-size: auto;
   }
 
   main {
-    padding: 150px 10px;
+    padding: 120px 0px;
     text-align: center;
+  }
+  main .w-75 {
+    width: 100% !important;
+  }
+
+  .p-4.rounded-4.shadow-sm.bg-transparent.text-center.w-75.contatoBox > div {
+    padding: 30px 20px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .container-fluid.d-flex {
+    flex-direction: column; /* empilha */
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .menu {
+    margin-top: 1.5rem;
+  }
+
+  .menu .row {
+    flex-direction: column;
+  }
+
+  .menu .col-md-4 {
+    width: 100%;
   }
 
   main h1 {
@@ -89,20 +124,32 @@
 
   main p {
     font-size: 1rem;
+    text-align: center;
   }
 
   .caixa-botoes {
     flex-direction: column;
+    margin: auto;
     gap: 10px;
+    width: 60%;
+    justify-content: center;
+  }
+  .btn-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .menu-card img {
-    height: 150px; 
+    height: auto;
+    width: 100%;
   }
 
   footer {
-    position: fixed;
+    position: relative;
     padding: 10px 0;
   }
-
+  footer p {
+    font-size: 0.8rem;
+  }
 }
