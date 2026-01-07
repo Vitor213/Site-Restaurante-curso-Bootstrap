@@ -12,6 +12,9 @@
   header nav a {
     display: none;
   }
+  #iconeHeader {
+    filter: none !important;
+  }
   .me-auto.d-flex.align-items-center img {
     margin: 0;
     padding: 0;
