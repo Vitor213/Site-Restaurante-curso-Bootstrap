@@ -81,12 +81,14 @@
   }
 
   body {
-    height: 100vh;
-    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-size: auto;
   }
 
   main {
+    flex: 1;
     padding: 120px 0px;
     text-align: center;
   }
@@ -146,10 +148,134 @@
   }
 
   footer {
-    position: relative;
+    flex: 1;
     padding: 10px 0;
   }
   footer p {
     font-size: 0.8rem;
+  }
+}
+/* ===========================
+   📱  TABLET (601px até 900px)
+   =========================== */
+@media (min-width: 601px) and (max-width: 900px) {
+  header {
+    position: relative;
+    padding: 20px 32px;
+    height: 90px;
+    text-align: center;
+  }
+
+  header nav a {
+    display: none;
+  }
+
+  .nome-h1 {
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0 120px;
+  }
+
+  .me-auto.d-flex.align-items-center img {
+    width: 70%;
+    height: auto;
+  }
+
+  /* Menu flutuante */
+  .nav-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 16px;
+    width: 220px;
+    flex-direction: column;
+    background: var(--cor-concreto);
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    gap: 14px;
+    z-index: 999;
+    display: none !important;
+  }
+
+  #menu-toggle:checked ~ .nav-menu {
+    display: flex !important;
+  }
+
+  .nav-menu a {
+    padding: 10px 0;
+    font-size: 1.05rem;
+    text-align: left;
+    color: var(--cor-preto);
+    font-weight: 500;
+  }
+
+  .hamburger {
+    right: 88px;
+    font-size: 2.2rem;
+    padding: 8px 10px;
+  }
+
+  #btn-reserva {
+    display: block;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-size: cover;
+  }
+
+  main {
+    padding: 140px 24px;
+    text-align: center;
+  }
+
+  main .w-75 {
+    width: 90%;
+  }
+
+  .container-fluid.d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    margin-top: 2rem;
+  }
+
+  .menu .row {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu .col-md-4 {
+    width: 50%;
+  }
+
+  main h1 {
+    font-size: 2.6rem;
+  }
+
+  main p {
+    font-size: 1.05rem;
+  }
+
+  .caixa-botoes {
+    flex-direction: row;
+    gap: 16px;
+    width: 70%;
+    justify-content: center;
+  }
+
+  .btn-contato {
+    flex-direction: row;
+  }
+
+  .menu-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer p {
+    font-size: 0.9rem;
   }
 }
