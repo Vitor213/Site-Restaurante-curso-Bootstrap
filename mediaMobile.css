@@ -1,0 +1,280 @@
+/* ===========================
+   📱  MOBILE (até 600px)
+   =========================== */
+@media (max-width: 600px) {
+  /* header fica relativo para que elementos absolutos (hamburger / nav / btn) se posicionem dentro dele */
+  header {
+    position: relative;
+    padding: 15px 20px;
+    height: 80px;
+    text-align: center;
+  }
+  header nav a {
+    display: none;
+  }
+  #iconeHeader {
+    filter: none !important;
+  }
+  .me-auto.d-flex.align-items-center img {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: auto;
+  }
+
+  /* Menu de navegação - escondido por padrão */
+  .nav-menu {
+    position: absolute;
+    top: calc(100% + 8px); /* fica logo abaixo do header */
+    right: 12px; /* alinhado à direita dentro do header */
+    width: 180px;
+    flex-direction: column;
+    background: var(--cor-concreto);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    gap: 12px;
+    z-index: 999;
+    display: none !important;
+  }
+
+  /* Quando o checkbox está marcado, mostra o menu */
+  #menu-toggle:checked ~ .nav-menu {
+    display: flex !important;
+  }
+
+  /* Links do menu */
+  .nav-menu a {
+    margin: 0;
+    padding: 8px 0;
+    font-size: 1rem;
+    text-align: left;
+    color: var(--cor-preto);
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+  }
+
+  .nav-menu a:hover {
+    color: var(--cor-oliva);
+  }
+
+  /* Ícone hambúrguer - posicionado dentro do header à direita, antes do botão reserva */
+  .hamburger {
+    position: absolute;
+    right: 72px; /* deixa espaço para o botão de reserva à direita */
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-size: 2rem;
+    padding: 6px 8px;
+    color: var(--cor-concreto);
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+  /* Botão reservar - também dentro do header, alinhado ao canto direito */
+  #btn-reserva {
+    display: none;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: auto;
+    background-position: bottom;
+  }
+
+  main {
+    flex: 1;
+    padding: 120px 0px;
+    text-align: center;
+  }
+  main .w-75 {
+    width: 100% !important;
+  }
+
+  .p-4.rounded-4.shadow-sm.bg-transparent.text-center.w-75.contatoBox > div {
+    padding: 30px 20px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .container-fluid.d-flex {
+    flex-direction: column; /* empilha */
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .menu {
+    margin-top: 1.5rem;
+  }
+
+  .menu .row {
+    flex-direction: column;
+  }
+
+  .menu .col-md-4 {
+    width: 100%;
+  }
+
+  main h1 {
+    font-size: 2.2rem;
+  }
+
+  main p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .caixa-botoes {
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+    width: 60%;
+    justify-content: center;
+  }
+  .btn-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu-card img {
+    height: auto;
+    width: 100%;
+  }
+
+  footer {
+    flex: 1;
+    padding: 10px 0;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+/* ===========================
+   📱  TABLET (601px até 900px)
+   =========================== */
+@media (min-width: 601px) and (max-width: 900px) {
+  header {
+    position: relative;
+    padding: 20px 32px;
+    height: 90px;
+    text-align: center;
+  }
+
+  header nav a {
+    display: none;
+  }
+
+  .nome-h1 {
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0 120px;
+  }
+
+  .me-auto.d-flex.align-items-center img {
+    width: 70%;
+    height: auto;
+  }
+
+  /* Menu flutuante */
+  .nav-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 16px;
+    width: 220px;
+    flex-direction: column;
+    background: var(--cor-concreto);
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    gap: 14px;
+    z-index: 999;
+    display: none !important;
+  }
+
+  #menu-toggle:checked ~ .nav-menu {
+    display: flex !important;
+  }
+
+  .nav-menu a {
+    padding: 10px 0;
+    font-size: 1.05rem;
+    text-align: left;
+    color: var(--cor-preto);
+    font-weight: 500;
+  }
+
+  .hamburger {
+    right: 88px;
+    font-size: 2.2rem;
+    padding: 8px 10px;
+  }
+
+  #btn-reserva {
+    display: block;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-size: cover;
+  }
+
+  main {
+    padding: 140px 24px;
+    text-align: center;
+  }
+
+  main .w-75 {
+    width: 90%;
+  }
+
+  .container-fluid.d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    margin-top: 2rem;
+  }
+
+  .menu .row {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu .col-md-4 {
+    width: 50%;
+  }
+
+  main h1 {
+    font-size: 2.6rem;
+  }
+
+  main p {
+    font-size: 1.05rem;
+  }
+
+  .caixa-botoes {
+    flex-direction: row;
+    gap: 16px;
+    width: 70%;
+    justify-content: center;
+  }
+
+  .btn-contato {
+    flex-direction: row;
+  }
+
+  .menu-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
