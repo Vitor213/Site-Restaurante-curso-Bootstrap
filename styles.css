@@ -48,6 +48,7 @@ main p {
   gap: 15px;
 }
 body {
+  height: 100vh;
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
   color: #000000;
