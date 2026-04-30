@@ -87,9 +87,10 @@
   }
 
   body.menu-page,
-  body.galeria-page {
+  body.galeria-page,
+  body.reservar-page {
     background-repeat: repeat-y;
-    background-position: center bottom;
+    background-position: center center;
     background-size: auto;
   }
 
