@@ -86,6 +86,13 @@
     background-position: bottom;
   }
 
+  body.menu-page,
+  body.galeria-page {
+    background-repeat: repeat-y;
+    background-position: center bottom;
+    background-size: auto;
+  }
+
   main {
     flex: 1;
     padding: 120px 0px;
